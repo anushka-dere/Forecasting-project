@@ -11,7 +11,7 @@ import base64
 st.title('Time Series Forecasting Using Streamlit')
 
 
-appdata = pd.read_csv(r"C:\Users\Admin\Documents\excelr\project\forecasting\datasetnew2.csv")
+appdata = load(open("oil price.sav",'rb'))
 appdata['ds'] = pd.to_datetime(appdata['ds'],errors='coerce') 
     
     
